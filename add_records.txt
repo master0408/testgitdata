@@ -1,0 +1,62 @@
+//user_tb
+
+insert into user_tb values (101,'helly','mistry',now(),'active')
+insert into user_tb values (null,'vishal','mistry',now(),'active')
+insert into user_tb values (null,'krish','singh',now(),'active')
+insert into user_tb values (null,'vidhi','jodhavat',now(),'active')
+insert into user_tb values (null,'kushboo','chaurashiay',now(),'active')
+
+//contry _tb
+
+insert into contry_tb values(null,'india');
+insert into contry_tb values(null,'america');
+insert into contry_tb values(null,'chaina');
+insert into contry_tb values(null,'england');
+insert into contry_tb values(null,'australia');
+
+//state_tb
+insert into state_tb values(null,'gujarat',1);
+insert into state_tb values(null,'maharastra',1);
+insert into state_tb values(null,'london',4);
+insert into state_tb values(null,'bruklin',2);
+insert into state_tb values(null,'sydney',3);
+
+//city_tb
+insert into city_tb values(null,'surat',1);
+insert into city_tb values(null,'Bharuch',1);
+insert into city_tb values(null,'pune',2);
+insert into city_tb values(null,'mumbay',2);
+
+//address
+insert into address values(201,101,1,'Sagrampura','2100/10',395002);
+insert into address values(null,101,1,'ravi shraddha bunglos vadadala ','A-43',392015);
+insert into address values(null,103,1,'vesu','Conventioal hall',395007);
+insert into address values(null,104,2,' Parande Chowk','100-10',411015);
+
+//provider_tb
+INSERT INTO provider_tb VALUES ('301', 'Idea', '1.20');
+INSERT INTO provider_tb VALUES (null, 'airtel', '1');
+INSERT INTO provider_tb VALUES (null, 'jio', '2');
+INSERT INTO provider_tb VALUES (null, 'vodafone', '0.36');
+
+//callzone_tb
+INSERT INTO callzone_tb VALUES ('401', 'INDIA', '0.21', '303');
+INSERT INTO callzone_tb VALUES (null, 'INDIA', '0.21', '303');
+INSERT INTO callzone_tb VALUES (null, 'USA', '0.29', '302');
+INSERT INTO callzone_tb VALUES (null, 'EUROPE', '0.50', '303');
+INSERT INTO callzone_tb VALUES (null, 'AUS', '0.30', '301');
+
+//card_tb
+INSERT INTO card_tb VALUES ('501', '9824647155', '25', '101', '304');
+INSERT INTO card_tb VALUES (null, '9824647155', '25', '102', '304');
+INSERT INTO card_tb VALUES (null, '9825704897', '48', '104', '301');
+INSERT INTO card_tb VALUES (null, '9632154875', '65', '103', '302');
+INSERT INTO card_tb VALUES (null, '3625147896', '30', '101', '303');
+
+//transection
+INSERT INTO transection VALUES ('601', '501', 'Dr', 'call', '401', '25', '2019-01-01', 'complete');
+INSERT INTO transection VALUES (null, '502', 'Dr', 'call', '401', '25', '2019-01-01', 'complete');
+INSERT INTO transection VALUES (null, '502', 'cr', 'call', '402', '15', '2019-11-21', 'complete');
+INSERT INTO transection VALUES (null, '503', 'Dr', 'call', '401', '25', '2019-11-21', 'complete');
+INSERT INTO transection VALUES (null, '504', 'cr', 'call', '404', '25', '2019-01-01', 'complete');
+
