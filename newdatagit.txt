@@ -1,0 +1,59 @@
+ /*
+ //Give all the commit made my user 
+ int pages = 1;
+        for (Collection<RepositoryCommit> commits : service.pageCommits(repo,
+                size)) {
+            System.out.println("Commit Page " + pages++);
+            for (RepositoryCommit commit : commits) {
+                String sha = commit.getSha().substring(0, 7);\
+                String author = commit.getCommit().getAuthor().getName();
+                Date date = commit.getCommit().getAuthor().getDate();
+                System.out.println(MessageFormat.format(message, sha, author,
+                        date));
+            }
+
+        }*/
+		
+		 public String getAuthentication() throws IOException {
+        OAuthService oauthService = new OAuthService();
+
+        // Replace with actual login and password
+        //  oauthService.getClient().setCredentials("mistryvishal", "9824647155v");
+
+        // Create authorization with 'gist' scope only
+        //   Authorization auth = new Authorization();
+        ///    auth.setScopes(Arrays.asList("gist,user,repo,admin:org"));
+        //  auth.setToken("f3d4af2601e89e664a36a868a36f812bda9c74c1");
+//        auth = oauthService.createAuthorization(auth);
+
+        // Create Gist service configured with OAuth2 token
+        //GistService gistService = new GistService();
+        // gistService.getClient().setOAuth2Token(auth.getToken());
+
+      /*  // Create Gist
+        Gist gist = new Gist();
+        gist.setPublic(false);
+        gist.setDescription("Created using OAuth2 token via Java API");
+        GistFile file = new GistFile();
+        file.setContent("Gist!");
+        file.setFilename("gist.txt");
+        gist.setFiles(Collections.singletonMap(file.getFilename(), file));
+        gist = gistService.createGist(gist);
+
+        System.out.println("Created Gist at " + gist.getHtmlUrl());*/
+        return null;
+    }
+	
+	
+	 public void getrepos() throws IOException {
+        final String user = "mistryvishal";
+        final String format = "{0}) {1}- created on {2}";
+        int count = 1;
+        RepositoryService service = new RepositoryService();
+        for (Repository repo : service.getRepositories(user))
+            System.out.println(MessageFormat.format(format, count++,
+                    repo.getName(), repo.getCreatedAt()));
+    }
+	
+	
+	
